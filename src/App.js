@@ -1,6 +1,11 @@
 import React from "react";
+import Setup from "./tutorial/1-useState/setup/2-useState-basics";
 function App() {
-  return <h3>Advance react concepts</h3>;
+  return (
+    <div className="container">
+      <Setup />
+    </div>
+  );
 }
 
 export default App;
