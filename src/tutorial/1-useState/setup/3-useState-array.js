@@ -1,8 +1,17 @@
-import React from 'react';
-import { data } from '../../../data';
+import React from "react";
+import { data } from "../../../data";
 
 const UseStateArray = () => {
-  return <h2>useState array example</h2>;
+  const [people, setPeople] = React.useState(data);
+
+  return (
+    <>
+      {people.map((person) => {
+        console.log(person);
+        return "hello";
+      })}
+    </>
+  );
 };
 
 export default UseStateArray;
